@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #dfe6e9;
+}
+
+#root{
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #E5FCC2;
+    /*padding: 5px;*/
+    border-radius: 25% 0 0 0;
+    overflow: hidden;
+    width: 50vw;
+}
+
+#root .card{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    text-wrap: inherit;
+}
+
+p{
+    padding: 10px;
+}
+
+.page{
+    min-height: 100vh;
+}
+
+.page:nth-child(1){
+    background-color: #A8A7A7;
+}
+
+.page:nth-child(2){
+    background-color: #CC527A;
+}
+
+.page:nth-child(3){
+    background-color: #E8175D;
+}
+
+.page:nth-child(4){
+    background-color: #474747;
+}
+
+#menuBtns{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#menuBtns .btn{
+    padding: 5px;
+    background-color: #FC913A;
+    color: white;
+    cursor: pointer;
+}
+
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.posts .card{
+    /*способ борьбы с багом в виде полосы*/
+    display: inline-block;
+    width: 20%;
+    min-height: 300px;
+    margin: 2.5%;
+    padding: 10px;
+    background-color: white;
+}
+
+.posts .deleteBtn{
+    padding: 10px;
+    background-color: darkred;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 0 10px darkred;
+}
+
+.posts .deleteBtn2{
+    padding: 10px;
+    background-color: darkblue;
+    color: white;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 0 0 10px darkblue;
+}
+
+#modal{
+    position: fixed;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 0;
+    top: 0;
+    /*display: none;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerModal{
+    position: fixed;
+    top: 30%;
+    max-width: 70%;
+    background-color: white;
+    padding: 1em;
+    z-index: 1;
+}
